@@ -5,7 +5,6 @@ import Auth from "../middlewares/AuthMiddlewares";
 
 const userRoutes = Router();
 
-userRoutes.post('/create', UserController.create)
 userRoutes.put('/update/:id', Auth, UserController.update)
 userRoutes.delete('/delete/:id', Auth, UserController.delete)
 userRoutes.get('/list', Auth, UserController.index)
