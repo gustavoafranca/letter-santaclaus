@@ -1,14 +1,10 @@
-import dotenv from 'dotenv'
-dotenv.config()
-
-
-export default {
+{
   "type": "postgres",
-  "host": "db-letter",
+  "host": "letter.cccmkcidltqg.us-east-1.rds.amazonaws.com",
   "port": 5432,
-  "username": process.env.POSTEGRESS_USER,
-  "password": process.env.POSTEGRESS_PASSWORD,
-  "database": process.env.POSTEGRES_BD,
+  "username": "letter",
+  "password": "latter.2021",
+  "database": "postgres",
   "syncronize": true,
   "logging": false,
   "migrations": [
